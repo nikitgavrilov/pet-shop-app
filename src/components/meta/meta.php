@@ -1,4 +1,3 @@
-<head>
 		<!-- Кодировка страницы -->
 		<meta charset="UTF-8">
       <!-- Адаптив, запрет на масштабирование у мобильных устройств -->
@@ -6,14 +5,14 @@
 		<!-- Заголовок страницы в браузере -->
 		<title>Товары для животных</title>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="../assets/styles/null.css">
-		<link rel="stylesheet" href="../assets/styles/general.css">
-		<link rel="stylesheet" href="../assets/styles/header.css">
+		<link rel="stylesheet" href="../../assets/styles/null.css">
+		<link rel="stylesheet" href="../../assets/styles/general.css">
+		<link rel="stylesheet" href="../../assets/styles/header.css">
+		<link rel="stylesheet" href="../../assets/styles/footer.css">
 		<!-- Подключаем шрифты -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 		<!-- JavaScript -->
-		<script src="./../assets/scripts/burger.js" defer></script>
-	</head>
+		<script src="../../assets/scripts/burger.js" defer></script>

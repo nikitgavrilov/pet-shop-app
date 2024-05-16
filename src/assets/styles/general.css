@@ -14,4 +14,23 @@ main {
   padding: 0 15px;
   max-width: 1110px;
 }
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.orange-btn,
+.transparent-btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+}
+.orange-btn {
+  background-color: #e27b3a;
+  color: #fff;
+}
+.transparent-btn {
+  color: #e27b3a;
+  border: 1px solid #e27b3a;
+}
 /*general styles*/
