@@ -1,0 +1,17 @@
+/*general styles*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 100%;
+}
+[class*="container"] {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1110px;
+}
+/*general styles*/
