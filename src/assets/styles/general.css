@@ -18,6 +18,7 @@ main {
 .buttons {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .orange-btn,
@@ -32,5 +33,11 @@ main {
 .transparent-btn {
   color: #e27b3a;
   border: 1px solid #e27b3a;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
 }
 /*general styles*/
