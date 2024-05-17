@@ -182,6 +182,70 @@
 							</div>
 						</div>
 					</section>
+					<section class="main__testimonials testimonials">
+						<div class="container">
+							<h2 class="testimonials__title title">Отзывы о нашей продукции</h2>
+							<div class="testimonials__body slider">
+								<div class="testimonials__column slider__item">
+									<div class="testimonials__item">
+										<div class="testimonials__decor-1">
+											<img src="img/testimonials/backticks.svg" alt="backticks">
+										</div>
+										<div class="testimonials__decor-2">
+											<img src="img/testimonials/backticks-rotated.svg" alt="backticks">
+										</div>
+										<div class="testimonials__avatar">
+											<img src="img/testimonials/man01.jpg" alt="man">
+										</div>
+										<p class="testimonials__text">
+											A dog in heat needs more than shade The more people paw prints 
+											forever on our hearts. I meet the more I like my dog.Dogs leave 
+											paw prints forever on our hearts.
+										</p>
+										<h3 class="testimonials__name">Margaret Street</h3>
+										<p class="testimonials__profession">UI&UX Designer</p>
+									</div>
+								</div>
+								<div class="testimonials__column slider__item">
+									<div class="testimonials__item">
+										<div class="testimonials__decor-1">
+											<img src="img/testimonials/backticks.svg" alt="backticks">
+										</div>
+										<div class="testimonials__decor-2">
+											<img src="img/testimonials/backticks-rotated.svg" alt="backticks">
+										</div>
+										<div class="testimonials__avatar">
+											<img src="img/testimonials/man01.jpg" alt="man">
+										</div>
+										<p class="testimonials__text">
+											A dog in heat needs more than shade The more people paw prints 
+											forever on our hear
+										</p>
+										<h3 class="testimonials__name">Margaret Street</h3>
+										<p class="testimonials__profession">UI&UX Designer</p>
+									</div>
+								</div>
+								<div class="testimonials__column slider__item">
+									<div class="testimonials__item">
+										<div class="testimonials__decor-1">
+											<img src="img/testimonials/backticks.svg" alt="backticks">
+										</div>
+										<div class="testimonials__decor-2">
+											<img src="img/testimonials/backticks-rotated.svg" alt="backticks">
+										</div>
+										<div class="testimonials__avatar">
+											<img src="img/testimonials/man01.jpg" alt="man">
+										</div>
+										<p class="testimonials__text">
+											A dog in heat
+										</p>
+										<h3 class="testimonials__name">Margaret Street</h3>
+										<p class="testimonials__profession">UI&UX Designer</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				</main>
          <?php include("./../../components/footer/footer.php") ?>
     </div>
