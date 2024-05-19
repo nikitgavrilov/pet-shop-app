@@ -24,10 +24,16 @@
 .slider .slick-arrow.slick-prev {
   left: 0;
   transform: rotate(-90deg);
-  background: url("../../pages/main/img/testimonials/arrow.svg") 0 0 / 100%;
+  background: url("../main/img/testimonials/arrow.svg") 0 0 / 100%;
 }
 .slider .slick-arrow.slick-next {
   right: 0;
   transform: rotate(90deg);
-  background: url("../../pages/main/img/testimonials/arrow.svg") 0 0 / 100%;
+  background: url("../main/img/testimonials/arrow.svg") 0 0 / 100%;
+}
+
+@media (max-width: 479px) {
+  .slider {
+    padding: 0 45px;
+  }
 }

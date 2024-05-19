@@ -21,9 +21,12 @@
   display: flex;
   gap: 27.5px;
 }
-.header__item {
-  font-size: 16px;
+
+.header__item,
+.header__item a {
   cursor: pointer;
+  font-size: 16px;
+  color: #000;
 }
 .header__item:hover {
   text-decoration: underline;

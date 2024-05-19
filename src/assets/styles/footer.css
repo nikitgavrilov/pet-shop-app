@@ -53,15 +53,8 @@
   cursor: pointer;
 }
 
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.footer__item {
-  font-size: 16px;
+.footer__up img {
   cursor: pointer;
-}
-.footer__item:hover {
-  text-decoration: underline;
+  transform: rotate(-90deg);
+  width: 50px;
 }

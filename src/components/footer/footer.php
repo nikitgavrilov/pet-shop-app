@@ -28,12 +28,9 @@
 					</svg>
 				</div>
 			</div>
-			<ul class="footer__list">
-				<li class="footer__item">Продукция</li>
-				<li class="footer__item">Забота о животных</li>
-				<li class="footer__item">О нас</li>
-				<li class="footer__item">Популярное</li>
-			</ul>
+			<div class="footer__up" id="footer-btn">
+				<img src="../components/footer/arrow.svg" alt="arrow">
+			</div>
 		</div>
 	</div>
 </footer>

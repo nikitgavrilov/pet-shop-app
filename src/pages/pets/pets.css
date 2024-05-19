@@ -1,0 +1,205 @@
+/* ======================================== hero ======================================== */
+.hero {
+  background: url("img/hero/start-screen.jpg") center right no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero__body {
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0 15px;
+}
+.hero__body > *:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.hero__back {
+  font-size: 18px;
+  color: #f1cdb3;
+}
+a {
+  color: #fff;
+  opacity: 0.6;
+}
+.hero__back a:hover {
+  text-decoration: underline;
+}
+
+.hero__decor-1 {
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
+.hero__title {
+  font-size: 53px;
+  color: #f1cdb3;
+  text-shadow: 1px 1px 5px #000;
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.hero__text {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.3;
+  text-shadow: 1px 1px 5px #000;
+}
+.hero__btn {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+.hero__decor-2 img {
+  width: 60px;
+}
+.hero__decor-2 {
+  position: absolute;
+  right: -80px;
+  top: -15px;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    background: url("img/hero/start-screen.jpg") -390px 0 no-repeat;
+  }
+}
+@media (max-width: 537px) {
+  .hero__decor-1 {
+    left: 0px;
+    top: -100px;
+  }
+}
+@media (max-width: 479px) {
+  .hero {
+    background: url("img/hero/start-screen.jpg") -520px 0 no-repeat;
+  }
+  .hero__title {
+    font-size: 44px;
+  }
+}
+
+/* ======================================== hero ======================================== */
+
+/* ======================================== shelter ======================================== */
+
+.shelter__body {
+  margin: 95px 0 0 0;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.shelter__left img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.shelter__right {
+  max-width: 430px;
+}
+.shelter__title {
+  margin: 0 0 25px 0;
+}
+.shelter__text {
+  color: #4c4c4c;
+  line-height: 1.4;
+  font-size: 16px;
+}
+.shelter__text > *:not(:last-child) {
+  margin: 0 0 25px 0;
+}
+
+/* ======================================== shelter ======================================== */
+
+/* ======================================== friends ======================================== */
+
+.friends__title {
+  margin: 100px 0 30px 0;
+  text-align: center;
+}
+.friends__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 15px;
+}
+.friends__item > *:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+.friends__img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.friends__name {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.friends__meet {
+  margin: 30px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* ======================================== friends ======================================== */
+
+/* ======================================== donation ======================================== */
+
+.donation__body {
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.donation__left img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.donation__right {
+  max-width: 380px;
+}
+.donation__right > *:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.donation__title {
+  font-size: 32px !important;
+}
+.donation__info {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #545454;
+  font-family: "Playfair Display", serif;
+}
+.donation__bank {
+  background-color: #f1cdb3;
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.donation__description {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #b2b2b2;
+}
+
+@media (max-width: 767px) {
+  .donation__body {
+    flex-wrap: wrap;
+  }
+}
+
+/* ======================================== donation ======================================== */

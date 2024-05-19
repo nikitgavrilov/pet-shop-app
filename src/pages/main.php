@@ -5,27 +5,34 @@
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="main.css">
-		<?php include("./../../components/meta/meta.php") ?>
+		<link rel="stylesheet" href="main/main.css">
+		<link rel="stylesheet" href="main/slider.css">
+		<?php include("./../components/meta/meta.php") ?>
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+		<script src="../assets/scripts/libs/slick.min.js" defer></script>
+		<script src="main/scripts/slider.js" defer></script>
+		<script src="../assets/scripts/burger.js" defer></script>
+		<script src="main/scripts/scroll.js" defer></script>
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<!-- Оболочка демонстрации -->
     <div class="wrapper">
-         <?php include("./../../components/header/header.php") ?>
+         <?php include("./../components/header/header.php") ?>
 				<main>
-					<section class="main__copilot copilot">
+					<section class="main__copilot copilot" id="first-section">
 							<div class="container">
 								<div class="copilot__body">
 									<div class="copilot__left">
 										<h1 class="copilot__title">Dog is my Copilot.</h1>
 										<div class="copilot__buttons buttons">
 											<a href="#" class="copilot__buy orange-btn">Купить сейчас</a>
-											<a href="#" class="copilot__details transparent-btn">Посмотреть</a>
+											<a href="pets.php" class="copilot__details transparent-btn">Посмотреть</a>
 										</div>
 									</div>
 									<div class="copilot__right">
-										<img src="img/copilot/dog.png" alt="dog">
+										<img src="main/img/copilot/dog.png" alt="dog">
 									</div>
 								</div>
 							</div>
@@ -70,7 +77,7 @@
 								<div class="popular__column">
 									<div class="popular__item item-popular">
 										<div class="item-popular__image">
-											<img src="img/popular/nordic01.png" alt="nordic01">
+											<img src="main/img/popular/nordic01.png" alt="nordic01">
 										</div>
 										<h3 class="item-popular__title">Nordic of nature</h3>
 										<p class="item-popular__text">
@@ -86,7 +93,7 @@
 								<div class="popular__column">
 									<div class="popular__item item-popular">
 										<div class="item-popular__image">
-											<img src="img/popular/nordic02.png" alt="nordic02">
+											<img src="main/img/popular/nordic02.png" alt="nordic02">
 										</div>
 										<h3 class="item-popular__title">Nordic of nature</h3>
 										<p class="item-popular__text">
@@ -101,7 +108,7 @@
 								<div class="popular__column">
 									<div class="popular__item item-popular">
 										<div class="item-popular__image">
-											<img src="img/popular/nordic03.png" alt="nordic03">
+											<img src="main/img/popular/nordic03.png" alt="nordic03">
 										</div>
 										<h3 class="item-popular__title">Nordic of nature</h3>
 										<p class="item-popular__text">
@@ -115,7 +122,7 @@
 								<div class="popular__column">
 									<div class="popular__item item-popular">
 										<div class="item-popular__image">
-											<img src="img/popular/catfood01.png" alt="catfood01">
+											<img src="main/img/popular/catfood01.png" alt="catfood01">
 										</div>
 										<h3 class="item-popular__title">catfood01</h3>
 										<p class="item-popular__text">
@@ -129,7 +136,7 @@
 								<div class="popular__column">
 									<div class="popular__item item-popular">
 										<div class="item-popular__image">
-											<img src="img/popular/catfood02.png" alt="catfood02">
+											<img src="main/img/popular/catfood02.png" alt="catfood02">
 										</div>
 										<h3 class="item-popular__title">catfood02</h3>
 										<p class="item-popular__text">
@@ -143,7 +150,7 @@
 								<div class="popular__column">
 									<div class="popular__item item-popular">
 										<div class="item-popular__image">
-											<img src="img/popular/catfood03.png" alt="catfood03">
+											<img src="main/img/popular/catfood03.png" alt="catfood03">
 										</div>
 										<h3 class="item-popular__title">catfood03</h3>
 										<p class="item-popular__text">
@@ -164,7 +171,7 @@
 						<div class="container">
 							<div class="care__body">
 								<div class="care__left">
-									<img src="img/care/dog-care.png" alt="dog-care">
+									<img src="main/img/care/dog-care.png" alt="dog-care">
 								</div>
 								<div class="care__right">
 									<h3 class="care__sub-title">ЗАБОТА О ЖИВОТНЫХ</h3>
@@ -176,7 +183,7 @@
 									</p>
 									<div class="care__buttons buttons">
 											<a href="#" class="care__appointment orange-btn">Встретиться</a>
-											<a href="#" class="care__details transparent-btn">Посмотреть детали</a>
+											<a href="pets.php" class="care__details transparent-btn">Посмотреть питомцев</a>
 										</div>
 								</div>
 							</div>
@@ -189,13 +196,13 @@
 								<div class="testimonials__column slider__item">
 									<div class="testimonials__item">
 										<div class="testimonials__decor-1">
-											<img src="img/testimonials/backticks.svg" alt="backticks">
+											<img src="main/img/testimonials/backticks.svg" alt="backticks">
 										</div>
 										<div class="testimonials__decor-2">
-											<img src="img/testimonials/backticks-rotated.svg" alt="backticks">
+											<img src="main/img/testimonials/backticks-rotated.svg" alt="backticks">
 										</div>
 										<div class="testimonials__avatar">
-											<img src="img/testimonials/man01.jpg" alt="man">
+											<img src="main/img/testimonials/man01.jpg" alt="man">
 										</div>
 										<p class="testimonials__text">
 											A dog in heat needs more than shade The more people paw prints 
@@ -209,13 +216,13 @@
 								<div class="testimonials__column slider__item">
 									<div class="testimonials__item">
 										<div class="testimonials__decor-1">
-											<img src="img/testimonials/backticks.svg" alt="backticks">
+											<img src="main/img/testimonials/backticks.svg" alt="backticks">
 										</div>
 										<div class="testimonials__decor-2">
-											<img src="img/testimonials/backticks-rotated.svg" alt="backticks">
+											<img src="main/img/testimonials/backticks-rotated.svg" alt="backticks">
 										</div>
 										<div class="testimonials__avatar">
-											<img src="img/testimonials/man01.jpg" alt="man">
+											<img src="main/img/testimonials/man01.jpg" alt="man">
 										</div>
 										<p class="testimonials__text">
 											A dog in heat needs more than shade The more people paw prints 
@@ -228,13 +235,13 @@
 								<div class="testimonials__column slider__item">
 									<div class="testimonials__item">
 										<div class="testimonials__decor-1">
-											<img src="img/testimonials/backticks.svg" alt="backticks">
+											<img src="main/img/testimonials/backticks.svg" alt="backticks">
 										</div>
 										<div class="testimonials__decor-2">
-											<img src="img/testimonials/backticks-rotated.svg" alt="backticks">
+											<img src="main/img/testimonials/backticks-rotated.svg" alt="backticks">
 										</div>
 										<div class="testimonials__avatar">
-											<img src="img/testimonials/man01.jpg" alt="man">
+											<img src="main/img/testimonials/man01.jpg" alt="man">
 										</div>
 										<p class="testimonials__text">
 											A dog in heat
@@ -246,8 +253,30 @@
 							</div>
 						</div>
 					</section>
+					<section class="main__feedback feedback">
+						<div class="container">
+							<div class="feedback__body">
+								<div class="feedback__left">
+									<h2 class="feedback__title title">
+										Связаться с нами
+									</h2>
+									<p class="feedback__text">
+										Отправьте нам вашу почту и мы свяжемся с вами в течении 24 часов.
+									</p>
+								</div>
+								<form action="#" method="POST" class="feedback__right">
+									<div class="feedback__input">
+										<input type="email" placeholder="Введите ваш email">
+									</div>
+									<div class="feedback__submit">
+										<button type="submit">Отправить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
 				</main>
-         <?php include("./../../components/footer/footer.php") ?>
+         <?php include("./../components/footer/footer.php") ?>
     </div>
 	</body>
 </html>

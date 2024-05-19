@@ -12,10 +12,14 @@
 			</div>
 			<nav class="header__nav">
 				<ul class="header__list">
-					<li class="header__item">Продукция</li>
-					<li class="header__item">Забота о животных</li>
-					<li class="header__item">О нас</li>
+					<li class="header__item">
+						<a href="main.php">Продукция</a>
+					</li>
+					<li class="header__item">
+						<a href="pets.php">Забота о животных</a>
+					</li>
 					<li class="header__item">Популярное</li>
+					<li class="header__item">Обратная связь</li>					
 					<div class="hidden-items">
 						<li class="hidden-item">
 							<svg fill="#000000" width="28px" height="28px" viewBox="0 0 32 32">
