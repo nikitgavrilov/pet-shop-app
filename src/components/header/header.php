@@ -1,7 +1,12 @@
+<?php 
+$url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$url = explode('?', $url);
+$url = $url[0];
+?>
 <header class="header">
 	<div class="container">
 		<div class="header__body">
-			<div class="header__logo">
+			<a href="main.php" class="header__logo">
 				<svg fill="#000000" width="48px" height="48px" viewBox="-1 0 19 19">
 					<g id="SVGRepo_bgCarrier" stroke-width="0"/>
 					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
@@ -9,17 +14,27 @@
 					<path d="M16.417 9.579A7.917 7.917 0 1 1 8.5 1.662a7.917 7.917 0 0 1 7.917 7.917zm-11.293.252A1.31 1.31 0 0 0 5.648 8.1c-.267-.76-.934-1.22-1.49-1.024a1.31 1.31 0 0 0-.524 1.73c.267.761.934 1.22 1.49 1.025zm6.664.747a4.606 4.606 0 0 0-6.518 0 1.945 1.945 0 0 0 2.75 2.75.72.72 0 0 1 1.017 0 1.945 1.945 0 0 0 2.75-2.75zM5.84 6.986c.087.918.7 1.61 1.372 1.547.67-.064 1.143-.86 1.057-1.777-.087-.917-.701-1.61-1.372-1.546-.67.063-1.144.859-1.057 1.776zm4.003 1.547c.671.063 1.285-.63 1.372-1.547.087-.917-.386-1.713-1.057-1.776-.67-.064-1.285.629-1.372 1.546-.086.918.387 1.713 1.057 1.777zM12.9 7.076c-.556-.195-1.223.263-1.49 1.024a1.31 1.31 0 0 0 .524 1.73c.556.196 1.223-.263 1.49-1.024a1.31 1.31 0 0 0-.524-1.73z"/>
 					</g>
 				</svg>
-			</div>
+			</a>
 			<nav class="header__nav">
 				<ul class="header__list">
+					<?php if($url == "http://pet-shop/src/pages/products.php") { ?>
 					<li class="header__item">
-						<a href="main.php">Продукция</a>
+						<a href="products.php">Продукция</a>
 					</li>
 					<li class="header__item">
 						<a href="pets.php">Забота о животных</a>
 					</li>
-					<li class="header__item">Популярное</li>
-					<li class="header__item">Обратная связь</li>					
+					<?php }
+					if ($url == "http://pet-shop/src/pages/main.php") {
+					?>
+					<li class="header__item">
+						<a href="products.php">Продукция</a>
+					</li>
+					<li class="header__item">
+						<a href="pets.php">Забота о животных</a>
+					</li>
+					<li class="header__item" id="popular-btn">Популярное</li>
+					<li class="header__item" id="feedback-btn">Обратная связь</li>					
 					<div class="hidden-items">
 						<li class="hidden-item">
 							<svg fill="#000000" width="28px" height="28px" viewBox="0 0 32 32">
@@ -36,6 +51,7 @@
 							</svg>
 						</li>
 					</div>
+					<?php } ?>
 				</ul>
 			</nav>
 			<div class="header__account account">

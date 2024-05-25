@@ -9,12 +9,6 @@ $(document).ready(function () {
     );
   }
 
-  $("#popular-btn").on("click", function () {
-    scrollToSection("#popular-section");
-  });
-  $("#feedback-btn").on("click", function () {
-    scrollToSection("#feedback-section");
-  });
   $("#footer-btn").on("click", function () {
     scrollToSection("#first-section");
   });

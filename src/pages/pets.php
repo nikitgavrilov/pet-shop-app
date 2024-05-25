@@ -91,7 +91,9 @@
 									<div class="friends__img">
 										<img src="pets/img/friends/jennifer.png" alt="pet">
 									</div>
-									<h3 class="friends__name">Jennifer</h3>
+									<h3 class="friends__name">
+										Jennifer
+									</h3>
 									<button class="friends__more transparent-btn">Узнать больше</button>
 								</div>
 							</div>
@@ -113,7 +115,7 @@
 									<button class="friends__more transparent-btn">Узнать больше</button>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<div class="friends__meet">
 							<a href="#" class="orange-btn">Познакомиться с остальными</a>
 						</div>

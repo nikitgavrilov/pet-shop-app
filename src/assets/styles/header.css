@@ -128,6 +128,9 @@
   }
   .header__nav.active {
     left: 0;
+  }
+  .header__nav.active .header__item a,
+  .header__nav.active .header__item {
     color: #fff;
   }
   .header__list {
