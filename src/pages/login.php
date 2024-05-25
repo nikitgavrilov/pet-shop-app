@@ -24,27 +24,23 @@
 		<!-- Оболочка демонстрации -->
 		<main>
 			<section class="reg">
-				<div class="reg__body form-body">
-					<form action="../php/auth/reg.php" method="POST" class="reg__form form">
-						<h2 class="reg__title form-title">Регистрация</h2>
-						<div class="reg__field form-field">
-							<p>Придумайте логин</p>
+				<div class="login__body form-body">
+					<form action="../php/auth/login.php" method="POST" class="login__form form">
+						<h2 class="login__title form-title">Авторизация</h2>
+						<div class="login__field form-field">
+							<p>Введите логин</p>
 							<input type="text" placeholder="Логин" require name="login">
 						</div>
-						<div class="reg__field form-field">
-							<p>Введите вашу почту</p>
-							<input type="mail" placeholder="Почта" require name="email">
-						</div>
-						<div class="reg__field form-field">
-							<p>Придумайте пароль</p>
+						<div class="login__field form-field">
+							<p>Введите пароль пароль</p>
 							<input type="password" placeholder="Пароль" require name="password">
 						</div>
-						<div class="reg__submit form-submit">
-							<button type="submit">Зарегистрироваться</button>
+						<div class="login__submit form-submit">
+							<button type="submit">Войти</button>
 						</div>
 						<hr>
-						<div class="reg__link form-link">
-							<a href="login.php">Уже есть аккаунт?</a>
+						<div class="login__link form-link">
+							<a href="reg.php">Еще нет аккаунта?</a>
 						</div>
 					</form>
 				</div>
