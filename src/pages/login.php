@@ -1,3 +1,8 @@
+<?php 
+if (isset($_COOKIE['user_login'])) {
+	Header("Location: main.php");
+}
+?>
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
@@ -32,7 +37,7 @@
 							<input type="text" placeholder="Логин" require name="login">
 						</div>
 						<div class="login__field form-field">
-							<p>Введите пароль пароль</p>
+							<p>Введите пароль</p>
 							<input type="password" placeholder="Пароль" require name="password">
 						</div>
 						<div class="login__submit form-submit">

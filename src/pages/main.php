@@ -12,9 +12,9 @@
 		<!-- JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
 		<script src="../assets/scripts/libs/slick.min.js" defer></script>
+		<script src="main/scripts/scroll.js" defer></script>
 		<script src="main/scripts/slider.js" defer></script>
 		<script src="../assets/scripts/burger.js" defer></script>
-		<script src="main/scripts/scroll.js" defer></script>
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
