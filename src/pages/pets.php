@@ -116,9 +116,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="friends__meet">
-							<a href="#" class="orange-btn">Познакомиться с остальными</a>
-						</div>
 					</div>
 				</section>
 				<section class="main__donation donation">

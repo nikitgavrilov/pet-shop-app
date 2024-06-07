@@ -19,16 +19,24 @@ $url = $url[0];
 				<ul class="header__list">
 					<?php if($url == "http://pet-shop/src/pages/products.php") { ?>
 					<li class="header__item">
-						<a href="products.php">Продукция</a>
+						<a href="products.php">Каталог</a>
 					</li>
 					<li class="header__item">
 						<a href="pets.php">Забота о животных</a>
 					</li>
-					<?php }
-					if ($url == "http://pet-shop/src/pages/main.php") {
+					<?php } ?>
+					<?php if($url == "http://pet-shop/src/pages/single-product.php") { ?>
+					<li class="header__item">
+						<a href="products.php">Каталог</a>
+					</li>
+					<li class="header__item">
+						<a href="pets.php">Забота о животных</a>
+					</li>
+					<?php } ?>
+					<?php if ($url == "http://pet-shop/src/pages/main.php") {
 					?>
 					<li class="header__item">
-						<a href="products.php">Продукция</a>
+						<a href="products.php">Каталог</a>
 					</li>
 					<li class="header__item">
 						<a href="pets.php">Забота о животных</a>

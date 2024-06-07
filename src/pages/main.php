@@ -1,4 +1,9 @@
-<?php include "../php/controller/controller.php" ?>
+<?php
+	if ($_COOKIE['user_login'] == "admin") {
+		Header("Location: admin.php");
+	}
+ include "../php/getData/getData.php";
+?>
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
@@ -57,8 +62,8 @@
 									</div>
 									<div class="products__column">
 										<div class="products__item item-products">			
-											<h2 class="item-products__title">Продукты высшего качества Pen Foods</h2>
-											<p class="item-products__text">Наши питомцы навсегда оставляют отпечатки в наших сердцах. Они делают нас счастливее.</p>
+											<h2 class="item-products__title">И многое другое на нашем сайте!</h2>
+											<p class="item-products__text">Подарите себе и своим питомцам незабываемые моменты счастья.</p>
 											<a href="products.php" class="transparent-btn">Посмотреть</a>
 										</div>
 									</div>
@@ -86,9 +91,6 @@
 											ингредиентов обеспечивает полноценное питание и поддерживает оптимальное 
 											состояние здоровья.
 										</p>
-										<div class="item-popular__btn">
-											<a href="#" class="transparent-btn">Посмотреть подробнее</a>
-										</div>
 									</div>
 								</div>
 								<div class="popular__column">
@@ -101,9 +103,6 @@
 										Каждый кусочек наполнен витаминами, минералами и питательными веществами, 
 										которые помогут вашему питомцу быть активным, сильным и счастливым. 
 										</p>
-										<div class="item-popular__btn">
-											<a href="#" class="transparent-btn">Посмотреть подробнее</a>
-										</div>
 									</div>
 								</div>
 								<div class="popular__column">
@@ -115,9 +114,6 @@
 										<p class="item-popular__text">
 										Приятный аромат и вкусный вкус делают наш корм незаменимым угощением для вашего пушистого друга.
 										</p>
-										<div class="item-popular__btn">
-											<a href="#" class="transparent-btn">Посмотреть подробнее</a>
-										</div>
 									</div>
 								</div>
 								<div class="popular__column">
@@ -129,9 +125,6 @@
 										<p class="item-popular__text">
 										Приятный аромат и вкусный вкус делают наш корм незаменимым угощением для вашего пушистого друга.
 										</p>
-										<div class="item-popular__btn">
-											<a href="#" class="transparent-btn">Посмотреть подробнее</a>
-										</div>
 									</div>
 								</div>
 								<div class="popular__column">
@@ -143,9 +136,6 @@
 										<p class="item-popular__text">
 										Приятный аромат и вкусный вкус делают наш корм незаменимым угощением для вашего пушистого друга.
 										</p>
-										<div class="item-popular__btn">
-											<a href="#" class="transparent-btn">Посмотреть подробнее</a>
-										</div>
 									</div>
 								</div>
 								<div class="popular__column">
@@ -157,9 +147,6 @@
 										<p class="item-popular__text">
 										Приятный аромат и вкусный вкус делают наш корм незаменимым угощением для вашего пушистого друга.
 										</p>
-										<div class="item-popular__btn">
-											<a href="#" class="transparent-btn">Посмотреть подробнее</a>
-										</div>
 									</div>
 								</div>
 							</div>

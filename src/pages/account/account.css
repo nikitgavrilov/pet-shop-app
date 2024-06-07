@@ -36,8 +36,17 @@
   object-fit: cover;
 }
 .cart__name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 18px;
   margin: 5px 0 0 0;
+}
+.cart__name button {
+  background-color: transparent;
+}
+.cart__name svg {
+  cursor: pointer;
 }
 .cart__count {
   display: flex;

@@ -14,7 +14,6 @@ if ($result->num_rows > 0) {
 
     if (password_verify($password, $stored_password)) {
 				setcookie('user_login', $row['login'], time() + 3600, '/');
-        echo "Вы успешно вошли!";
 				Header("Location: ../../pages/main.php");
     } else {
         echo "Неверный логин или пароль!";

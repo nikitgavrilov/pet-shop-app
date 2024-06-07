@@ -1,4 +1,4 @@
-<?php include "../php/controller/controller.php" ?>
+<?php include "../php/getData/getData.php" ?>
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
@@ -11,7 +11,6 @@
 		<!-- JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
 		<script src="../assets/scripts/libs/slick.min.js" defer></script>
-		<script src="products/scripts/slider.js" defer></script>
 		<script src="products/scripts/scroll.js" defer></script>
 		<script src="../assets/scripts/burger.js" defer></script>
 	</head>
@@ -26,18 +25,27 @@
 							<div class="products__body">
 								<?php while ($product = mysqli_fetch_assoc($productsResult)) { ?>
 								<div class="products__column">
-									<div class="products__item products-item">
-										<div class="products-item__image">
+									<form action="../php/cart/cart.php" method="POST" class="products__item products-item">
+										<input type="hidden" value="<?= $product['id'] ?>" name="id">
+										<a href="single-product.php?id=<?= $product['id'] ?>" class="products-item__image">
 											<img src="<?= $product['image'] ?>" alt="product">
-										</div>
+										</a>
 										<div class="products-item__info">
 											<h3 class="products-item__name"><?= $product['name'] ?></h3>
 											<p class="products-item__price"><?= $product['price'] ?>.00 Р.</p>
 										</div>
 										<div class="products-item__cart">
-											<button>В корзину</button>
+											<?php if (isset($_COOKIE['user_login'])) {?>
+												<?php if ($product['inCart'] == 0) { ?>
+													<button type="submit">В корзину</button>
+												<?php } else { ?>
+													<button type="submit">Удалить из корзины</button>
+												<?php } ?>
+											<?php } else { ?>
+												<a href="login.php" class="products-item__relocate">В корзину</a>
+											<?php } ?>
 										</div>
-									</div>
+								</form>
 								</div>
 								<?php } ?>			
 							</div>
