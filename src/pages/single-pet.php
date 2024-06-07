@@ -3,7 +3,7 @@ include "../php/db/db.php";
 
 $id = $_GET['id'];
 
-$getProductByIdResult = $conn->query("SELECT * FROM `products` WHERE id = $id");
+$getPetByIdResult = $conn->query("SELECT * FROM `pets` WHERE id = $id");
 ?>
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ $getProductByIdResult = $conn->query("SELECT * FROM `products` WHERE id = $id");
 					<section class="main__single single" id="first-section">
 						<div class="container">
 							<div class="single__body body">
-								<?php while ($result = $getProductByIdResult->fetch_assoc()) { ?>
+								<?php while ($result = $getPetByIdResult->fetch_assoc()) { ?>
 								<div class="single__left left">
 									<img src="<?= $result['image'] ?>" alt="">
 								</div>
@@ -35,8 +35,14 @@ $getProductByIdResult = $conn->query("SELECT * FROM `products` WHERE id = $id");
 									<p class="single__description description">
 										<?= $result['description'] ?>
 									</p>
+									<p class="single__description description">
+										<span>Болезни:</span> <?= $result['diseases'] ?>
+									</p>
+									<p class="single__description description">
+										<span>Возраст:</span> <?= $result['age'] ?> год/лет
+									</p>
 									<div class="copilot__buttons buttons">
-										<a href="#" class="copilot__buy orange-btn">Купить сейчас</a>
+										<a href="pets.php" class="copilot__buy orange-btn">Обратно</a>
 									</div>
 								</div>
 								<?php } ?>

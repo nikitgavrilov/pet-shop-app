@@ -1,3 +1,8 @@
+<?php
+include "../php/db/db.php";
+
+$getPetsResult = $conn->query("SELECT * FROM `pets`");
+?>
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
@@ -77,44 +82,17 @@
 					<div class="container">
 						<h2 class="friends__title care-title">Наши друзья, которые ищут дом</h2>
 						<div class="friends__body slider">
+							<?php while ($pet = mysqli_fetch_assoc($getPetsResult)) { ?>
 							<div class="friends__column slider__item">
 								<div class="friends__item">
 									<div class="friends__img">
-										<img src="pets/img/friends/katrine.png" alt="pet">
+										<img src="<?= $pet['image'] ?>" alt="pet">
 									</div>
-									<h3 class="friends__name">Katrine</h3>
-									<button class="friends__more transparent-btn">Узнать больше</button>
+									<h3 class="friends__name"><?= $pet['name'] ?></h3>
+									<a href="single-pet.php?id=<?= $pet['id'] ?>" class="friends__more transparent-btn">Узнать больше</a>
 								</div>
 							</div>
-							<div class="friends__column slider__item">
-								<div class="friends__item">
-									<div class="friends__img">
-										<img src="pets/img/friends/jennifer.png" alt="pet">
-									</div>
-									<h3 class="friends__name">
-										Jennifer
-									</h3>
-									<button class="friends__more transparent-btn">Узнать больше</button>
-								</div>
-							</div>
-							<div class="friends__column slider__item">
-								<div class="friends__item">
-									<div class="friends__img">
-										<img src="pets/img/friends/woody.png" alt="pet">
-									</div>
-									<h3 class="friends__name">Woody</h3>
-									<button class="friends__more transparent-btn">Узнать больше</button>
-								</div>
-							</div>
-							<div class="friends__column slider__item">
-								<div class="friends__item">
-									<div class="friends__img">
-										<img src="pets/img/friends/scarlet.png" alt="pet">
-									</div>
-									<h3 class="friends__name">Scarlet</h3>
-									<button class="friends__more transparent-btn">Узнать больше</button>
-								</div>
-							</div>
+							<?php } ?>
 						</div>
 					</div>
 				</section>
